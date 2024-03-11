@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-from xgboost import XGBRegressor
 XGB1 = pickle.load(open('XGB1.pkl', 'rb'))
 XGB2 = pickle.load(open('XGB2.pkl', 'rb'))
 XGB3 = pickle.load(open('XGB3.pkl', 'rb'))
