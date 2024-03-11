@@ -19,28 +19,28 @@ with col1:
   C = st.number_input("Carbon content (%)", 0.00,50.00)
 
 with col2:
+  O = st.number_input("Oxygen content (%)", 0.00,35.00)
+  
+with col3:
+  S = st.number_input("Sulfur content (%)", 0.00,20.00)
+  
+with col4:
+  VM = st.number_input("Volatile Matter (%)", 0.00,75.00)
+ 
+with col5:
+  MC = st.number_input("Moisture Content (%)", 0.00,84.20)
+  
+with col1:
   H = st.number_input("Hydrogen content (%)", 0.00,15.00)
 
-with col3:
-  O = st.number_input("Oxygen content (%)", 0.00,35.00)
-
-with col4:
+with col2:
   N = st.number_input("Nitrogen content (%)", 0.00,10.00)
-
-with col5:
-  S = st.number_input("Sulfur content (%)", 0.00,20.00)
-
-with col1:
+  
+with col3:
   A = st.number_input("Ash content (%)", 0.00,75.00)
 
-with col2:
-  VM = st.number_input("Volatile Matter (%)", 0.00,75.00)
-
-with col3:
-  FC = st.number_input("Fixed Carbon (%)", 0.00,20.00)
-
 with col4:
-  MC = st.number_input("Moisture Content (%)", 0.00,84.20)
+  FC = st.number_input("Fixed Carbon (%)", 0.00,20.00)
 
 with col5:
   T = st.number_input("Temperature (°C)", 350,1000)
@@ -76,15 +76,23 @@ if st.button('predict sludge pyrolysis'):
   col1, col2, col3, col4 = st.columns(4)
   with col1:
     st.write('Biooil (wt.%)', Biooil)
+    
   with col2:
-    st.write('Syngas (wt.%)', Syngas)
-  with col3:
     st.write('Biochar (wt.%)', Biochar)
-  with col4:
-    st.write('H2 (vol.%)', H2)
-  with col1:
-    st.write('CO (vol.%)', CO)
-  with col2:
-    st.write('CO2 (vol.%)', CO2)
+    
   with col3:
+    st.write('CO (vol.%)', CO)
+    
+  with col4:
     st.write('CH4 (vol.%)', CH4)
+    
+  with col1:
+    st.write('Syngas (wt.%)', Syngas)
+    
+  with col2:
+    st.write('H2 (vol.%)', H2)
+   
+  with col3:
+    st.write('CO2 (vol.%)', CO2)
+    
+    
