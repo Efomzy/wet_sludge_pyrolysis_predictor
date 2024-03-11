@@ -10,8 +10,8 @@ XGB5 = pickle.load(open('XGB5.pkl', 'rb'))
 XGB6 = pickle.load(open('XGB6.pkl', 'rb'))
 XGB7 = pickle.load(open('XGB7.pkl', 'rb'))
 
-st.write('# Wet Sludge Predictor')
-st.subheader('(Ultimate and Proximate analysis must be in dry basis)')
+st.write('# Wet Sludge Pyrolysis Predictor')
+st.subheader('(Ultimate and Proximate analysis should be in dry basis)')
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
