@@ -72,7 +72,7 @@ else:
   CO2 = 'error in input data'
   CH4 = 'error in input data'
 
-if st.button('predict sludge pyrolysis'):
+if st.button('Click here to predict sludge pyrolysis'):
   col1, col2, col3, col4 = st.columns(4)
   with col1:
     st.write('Biooil (wt.%)', Biooil)
